@@ -1,0 +1,12 @@
+#window3 form {
+  display: flex;
+}
+
+#window3 input[type="text"] {
+  flex-grow: 1;
+  margin-right: 5px;
+}
+
+#window3 button[type="submit"] {
+  flex-shrink: 0;
+}

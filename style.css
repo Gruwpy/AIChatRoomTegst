@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .input-area {
@@ -23,15 +24,19 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 textarea {
-  flex: 1;
   padding: 8px;
   border: none;
   border-radius: 4px;
   margin-right: 10px;
   resize: none;
+  height: 70px;
+  width: 500px;
 }
 
 .input-area input {

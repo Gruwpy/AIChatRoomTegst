@@ -1,39 +1,15 @@
-#window1 {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  width: 45%;
-  height: 80%;
+body {
+  background-color: black;
 }
 
-#window2 {
+.chat-room {
+  width: 640px;
+  height: 440px;
+  margin: auto;
   position: absolute;
-  top: 50px;
-  right: 50px;
-  width: 45%;
-  height: 80%;
-}
-
-#window3 {
-  position: absolute;
-  top: 70%;
-  left: 50px;
-  width: 80%;
-  height: 20%;
-}
-#window1 {
-  /* previous styles */
-  width: calc(45% + 20%);
-  height: calc(80% + 20%);
-}
-
-#window2 {
-  /* previous styles */
-  width: calc(45% + 20%);
-  height: calc(80% + 20%);
-}
-#window3 {
-  /* previous styles */
-  width: calc(80% + 30%);
-  height: calc(20% - 30%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
 }

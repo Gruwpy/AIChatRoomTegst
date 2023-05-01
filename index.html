@@ -10,10 +10,34 @@
       <div class="input-container">
         <div class="output-window"></div>
         <div class="input-area">
-          <textarea placeholder="Type your message here..."></textarea>
-          <button>Send</button>
+          <textarea placeholder="Type your message here..." id="message-input"></textarea>
+          <button id="send-button">Send</button>
         </div>
       </div>
     </div>
+
+    <script>
+      const messageInput = document.getElementById("message-input");
+      const sendButton = document.getElementById("send-button");
+      const outputWindow = document.querySelector(".output-window");
+
+      function sendMessage() {
+        const message = messageInput.value;
+        if (message.trim() !== "") {
+          outputWindow.innerHTML += `<p>${message}</p>`;
+          messageInput.value = "";
+          messageInput.focus();
+        }
+      }
+
+      sendButton.addEventListener("click", sendMessage);
+
+      messageInput.addEventListener("keydown", function(event) {
+        if (event.keyCode === 13 && !event.shiftKey) {
+          event.preventDefault();
+          sendMessage();
+        }
+      });
+    </script>
   </body>
 </html>

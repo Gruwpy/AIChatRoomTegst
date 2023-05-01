@@ -1,12 +1,39 @@
-#window3 form {
-  display: flex;
+#window1 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 45%;
+  height: 80%;
 }
 
-#window3 input[type="text"] {
-  flex-grow: 1;
-  margin-right: 5px;
+#window2 {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 45%;
+  height: 80%;
 }
 
-#window3 button[type="submit"] {
-  flex-shrink: 0;
+#window3 {
+  position: absolute;
+  top: 70%;
+  left: 50px;
+  width: 80%;
+  height: 20%;
+}
+#window1 {
+  /* previous styles */
+  width: calc(45% + 20%);
+  height: calc(80% + 20%);
+}
+
+#window2 {
+  /* previous styles */
+  width: calc(45% + 20%);
+  height: calc(80% + 20%);
+}
+#window3 {
+  /* previous styles */
+  width: calc(80% + 30%);
+  height: calc(20% - 30%);
 }
